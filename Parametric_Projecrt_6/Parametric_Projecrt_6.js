@@ -20,26 +20,26 @@ function draw(){
       stroke(255,255,0);
       fill(255,255,0);
     ellipse(fX(x),fY(x),3,3);
-       
+
       stroke(255,0,255);
       fill(255,0,255);
     ellipse(fX(x)-100,fY(x)-100,3,3);
-      
+
       stroke(100,130,255);
       fill(100,130,255);
     ellipse(fX(x)-100,fY(x)+100,3,3);
-    
+
       stroke(255,200,50);
       fill(255,200,50);
     ellipse(fX(x)+100,fY(x)-100,3,3);
-    
+
       stroke(255,255,255);
       fill(255,255,255);
     ellipse(fX(x)+100,fY(x)+100,3,3);
-    
+
   x=x+0.1;
   }
-  
+
   if(mouseX >= 200 && mouseX <= 400 && mouseY >= 0 && mouseY <= 200) {
     point(sX(x),sY(x));
     point(sX(x)-200,sY(x)-200);
@@ -48,26 +48,26 @@ function draw(){
     point(sX(x)-100,sY(x)-100);
     x=x+0.05;
   }
-  
+
   if(mouseX >= 0 && mouseX <= 200 && mouseY >= 200 && mouseY <= 400) {
     strokeWeight(1);
       stroke(255,255,0);
       fill(255,255,0);
     line(fX(x),0,0,fY(x));
-       
+
       stroke(255,0,255);
       fill(255,0,255);
     line(fX(x)-100,-100,-100,fY(x)-100);
-      
+
       stroke(100,130,255);
       fill(100,130,255);
-    
+
     //line(fX(x)-100,-100,100,fY(x)+100);
-    
+
       stroke(255,200,50);
       fill(255,200,50);
     //ellipse(fX(x)+100,fY(x)-100,3,3);
-    
+
       stroke(255,255,255);
       fill(255,255,255);
     //ellipse(fX(x)+100,fY(x)+100,3,3);
@@ -81,13 +81,13 @@ function fX(x) {
 
 function fY(x) {
   return 75*cos(x);
-  
+
 }
 
 function sX(x) {
-  return (40*sin(x)+40*sin(x/10)+100); 
+  return (40*sin(x)+40*sin(x/10)+100);
 }
 
 function sY(x) {
-  return 40*cos(x)+100;  
+  return 40*cos(x)+100;
 }

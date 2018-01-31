@@ -13,16 +13,16 @@ function setup() {
 function draw() {
   background(100);
   //Code for Car Movement
-  if(keyIsDown(RIGHT_ARROW)){  
+  if(keyIsDown(RIGHT_ARROW)){
     xLocation=xLocation+2
   }
-  if(keyIsDown(LEFT_ARROW)){  
+  if(keyIsDown(LEFT_ARROW)){
     xLocation=xLocation-2
   }
-  if(keyIsDown(DOWN_ARROW)){  
+  if(keyIsDown(DOWN_ARROW)){
     yLocation=yLocation+2
-  }  
-  if(keyIsDown(UP_ARROW)){  
+  }
+  if(keyIsDown(UP_ARROW)){
     yLocation=yLocation-2
   }
   print(xLocation);
@@ -31,25 +31,25 @@ function draw() {
   {
     d1=0;
   }
-   if(xLocation+100>=600 && xLocation+100<=625 && yLocation+30>=110 && yLocation+30<=170){  
+   if(xLocation+100>=600 && xLocation+100<=625 && yLocation+30>=110 && yLocation+30<=170){
     d2=0;
   }
-  
-  if(xLocation+100>=100 && xLocation+100<=125 && yLocation+30>=140 && yLocation+30<=170){  
+
+  if(xLocation+100>=100 && xLocation+100<=125 && yLocation+30>=140 && yLocation+30<=170){
     d3=0;
   }
-  
-  if(xLocation+100>=800 && xLocation+100<=825 && yLocation+30>=440 && yLocation+30<=460){  
+
+  if(xLocation+100>=800 && xLocation+100<=825 && yLocation+30>=440 && yLocation+30<=460){
     d4=0;
   }
   //Code for dot removal
   /*
   if(xLocation>390&&xLocation<410&&yLocation>130&&yLocation<150);{
-  }  
+  }
   if(xLocation>490&&xLocation<510&&yLocation>130&&yLocation<150);{
-  }  
+  }
   if(xLocation>90&&xLocation<410&&yLocation>130&&yLocation<150);{
-  }  
+  }
   if(xLocation>790&&xLocation<810&&yLocation>430&&yLocation<450);{
   }
   */
@@ -64,13 +64,13 @@ function draw() {
   if(d2 ==1) {
   ellipse(600,140,40,40);
   }
-  
+
   // Third Red Dot
   fill(250,0,0);
   if(d3 ==1) {
   ellipse(100,140,40,40);
   }
-  
+
   // Dot no. 4 Pink
     fill(250,0,250);
   if(d4 == 1) {
